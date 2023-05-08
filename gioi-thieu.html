@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- BOOTSTRAP JS -->
+	<script type="text/javascript" src="public/js/jquery.js"></script>
+	<script type="text/javascript" src="public/js/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript" src="public/js/popper.min.js" defer></script>
+	<script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+
+	<!-- BOOTSTRAP ICONS CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<!-- FONTAWESOME CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- OWL CAROUSEL CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<!-- BOOTSTRAP CSS -->
+	<link href="public/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!-- OWL CAROUSEL JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<!-- ANIMATED -->
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	<title>Ant Home Clone</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<!------------------------------- START HEADER --------------------------------------->
+
+		<header class="row bg-white">
+			<div class="border-bottom px-6 d-flex justify-content-between align-items-center py-3">
+				 <button class="navbar-toggler d-flex align-items-center justify-content-center p-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon fs-2 " style="width: fit-content; height: fit-content;"><i class="bi bi-list"></i></span>
+				</button>
+				 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					  <div class="offcanvas-header position-relative pt-4">
+						<button type="button" class="bg-transparent border-0 p-0 position-absolute top-50 end-0 translate-middle" style="outline: none;" data-bs-dismiss="offcanvas" aria-label="Close">
+							<i class="bi bi-x-circle fs-3"></i>
+						</button>
+					  </div>
+					  <div class="offcanvas-body position-absolute p-0 pt-4 d-flex flex-column">
+							<a href="./index.html" class="textHoverColor fs-5 px-5 py-3">
+								Trang chủ
+							</a>
+							<a href="./gioi-thieu.html" class="textHoverColor fs-5 px-5 py-3">
+								Giới thiệu
+							</a>
+							<a href="./san-pham.html" class="textHoverColor fs-5 px-5 py-3">
+								Sản phẩm
+							</a>
+							<a href="#" class="textHoverColor fs-5 px-5 py-3">
+								Deal Hot
+							</a>
+							<a href="#" class="textHoverColor fs-5 px-5 py-3">
+								Thương hiệu nổi bật
+							</a>
+							<a href="./tin-tuc.html" class="textHoverColor fs-5 px-5 py-3">
+								Tin Tức
+							</a>
+							<a href="./lien-he.html" class="textHoverColor fs-5 px-5 py-3">
+								Liên hệ
+							</a>
+							<a href="./faq.html" class="textHoverColor fs-5 px-5 py-3">
+								FAQ
+							</a>
+					  </div>
+				</div>
+				
+		
+				<div class="">
+					<img src="public/image/logo.webp" alt="" width="180px">
+				</div>
+		
+		
+				<div class="d-flex align-items-center ">
+					<div class="border border-1 d-flex align-items-center px-3 py-2 header__search">
+						<input type="text" placeholder="Tìm sản phẩm" class="bg-transparent border-0 w-100 d-none d-lg-block" style="outline: none;">
+						<i class="bi bi-search text-black-50 fs-5"></i>
+					</div>
+		
+					<div class="d-none d-lg-flex align-items-center me-3 position-relative header__item textHoverColor" style="margin-left: 5rem;">
+						<i class="bi bi-heart me-1 fs-4"></i>
+						<p class="fs-6">Yêu thích</p>
+						 <span class="position-absolute top-0 start-100 translate-middle bg-primary text-light rounded-circle d-flex align-items-center justify-content-center fs-7" style="width: 1.3rem; height: 1.3rem;">
+							 0
+						  </span>
+					</div>
+					<div class="d-none d-lg-flex align-items-center me-3 header__item textHoverColor">
+						<i class="bi bi-person me-1 fs-4"></i>
+						<p class="fs-6">Tài khoản</p>
+		
+					</div>
+					<div class="d-flex align-items-center me-3 header__item textHoverColor position-relative">
+						<i class="bi bi-bag me-1 fs-4"></i>
+						<p class="fs-6 d-none d-lg-block">Giỏ hàng</p>
+						<span class="position-absolute top-0 start-100 translate-middle bg-primary text-light rounded-circle d-flex align-items-center justify-content-center fs-7"  style="width: 1.3rem; height: 1.3rem;">
+							 0
+						  </span>
+					</div>
+				</div>
+			</div>
+		
+			<div class="px-6 d-none d-lg-flex align-items-center justify-content-center position-relative">
+				<a class="textHoverColor fs-6 me-4 py-3" href="./index.html">
+					Trang chủ
+				</a>
+				<a class="textHoverColor fs-6 me-4 py-3" href="./gioi-thieu.html">
+					Giới thiệu
+				</a>
+				<a class="textHoverColor fs-6 me-4 py-3 d-flex align-items-center wrapDrop" href="./san-pham.html">
+					<p>Sản phẩm</p>
+					<i class="bi bi-chevron-down ms-1"></i>
+				</a>
+				<div class="dropdown-menu w-100 px-6 wrapDrop py-3 animate__animated animate__fadeInUp animate__faster">
+					<div class="d-flex py-2">
+						<div class="col-8 d-flex flex-wrap">
+							<div class="col-3">
+								<h2 class="textHoverColor fw-bolder fs-6 py-2">Nội thất</h2>
+								<p class="py-1 textHoverColor fs-7">Phòng khách</p>
+								<p class="py-1 textHoverColor fs-7">Phòng ăn</p>
+								<p class="py-1 textHoverColor fs-7">Phòng ngủ</p>
+								<p class="py-1 textHoverColor fs-7">Phòng làm việc</p>
+								<p class="py-1 textHoverColor fs-7">Phòng cho bé</p>
+								<p class="py-1 textHoverColor fs-7">Nội thất thông minh</p>
+							</div>
+							<div class="col-3">
+								<h2 class="textHoverColor fw-bolder fs-6 py-2">Đồ trang trí</h2>
+								<p class="py-1 textHoverColor fs-7"> Tranh & Khung ảnh </p>
+								<p class="py-1 textHoverColor fs-7">Lọ & Bình trang trí</p>
+								<p class="py-1 textHoverColor fs-7">Đồng hồ</p>
+								<p class="py-1 textHoverColor fs-7"> Nến thơm & Đèn tinh dầu</p>
+								<p class="py-1 textHoverColor fs-7"> Đồ dùng uống trà & Cafe</p>
+							</div>
+							<div class="col-3">
+								<h2 class="textHoverColor fw-bolder fs-6 py-2">Đèn</h2>
+								<p class="py-1 textHoverColor fs-7"> Đèn bàn</p>
+								<p class="py-1 textHoverColor fs-7"> Đèn sàn</p>
+								<p class="py-1 textHoverColor fs-7"> Đèn trần</p>
+								<p class="py-1 textHoverColor fs-7"> Đèn treo tường</p>
+							</div>
+							<div class="col-3">
+								<h2 class="textHoverColor fw-bolder fs-6 py-2">Ngoại thất</h2>
+								<p class="py-1 textHoverColor fs-7">Trang trí ngoài trời</p>
+								<p class="py-1 textHoverColor fs-7">Trang trí sân vườn</p>
+							</div>
+							<div class="col-3">
+								<h2 class="textHoverColor fw-bolder fs-6 py-2">Chăn, Ga, Gối & Nệm</h2>
+							</div>
+							<div class="col-3">
+								<h2 class="textHoverColor fw-bolder fs-6 py-2">Đồ dùng nhà tắm</h2>
+							</div>
+						</div>
+						<div class="col-4">
+							<img src="public/image/ads.webp" alt="" class="w-100">
+						</div>
+					</div>
+				  </div>
+				
+				<a class="textHoverColor fs-6 me-4 py-3" href="#">
+					Deal Hot
+				</a>
+				<a class="textHoverColor fs-6 me-4 py-3" href="#">
+					Thương hiệu nổi bật
+				</a>
+				<a class="textHoverColor fs-6 me-4 py-3" href="./tin-tuc.html">
+					Tin Tức
+				</a>
+				<a class="textHoverColor fs-6 me-4 py-3" href="./lien-he.html">
+					Liên hệ
+				</a>
+				<a class="textHoverColor fs-6 me-4 py-3" href="./faq.html">
+					FAQ
+				</a>
+				
+			</div>
+		</header>
+		<!------------------------------- END HEADER --------------------------------------->
+
+		<!---------------------------------------------- START BREADCUMB  ----------------------------------->
+		<div class="row px-6 bg-secondary ">
+			<nav aria-label="breadcrumb" class="px-3 px-lg-0">
+			<ol class="breadcrumb mb-0 py-2 fs-7">
+				<li class="breadcrumb-item"><a href="#" class="textHoverColor">Trang chủ</a></li>
+				<li class="breadcrumb-item active text-primary" aria-current="page">Giới thiệu</li>
+			</ol>
+			</nav>
+		</div>
+		<!---------------------------------------------- END BREADCUMB  ----------------------------------->
+
+		<!---------------------------------------------- START CONTENT  ----------------------------------->
+		<div class="row">
+			<div class="px-6 py-4">
+				<h4 class="fs-4 textHoverColor mb-2">Giới thiệu</h4>
+				<p class="mb-3 fs-6"><b class="fw-bolder">Ant Home</b> là sàn thương mại điện tử chuyên cung cấp các sản phẩm nội thất và trang trí nội thất cho thị trường Việt Nam. Chúng tôi tin rằng hạnh phúc của mỗi gia đình đều được vun đắp từ nhà, không gian sống tạo dựng giá trị cuộc sống. Chính vì vậy mục tiêu, sứ mệnh mà <b class="fw-bolder">Ant Home</b> hướng tới là đem đến những giải pháp tối ưu về nội thất cho nhà ở, văn phòng… Với con đường mà <b class="fw-bolder">Ant Home</b> đã chọn, chúng tôi mong muốn được cùng xây tổ ấm với triệu gia đình Việt đồng thời cùng chung tay kiến tạo không gian làm việc chuyên nghiệp với các doanh nghiệp tại Việt Nam.</p>
+				<img src="public/image/gioithieu.webp" alt="" class="w-100 mb-3">
+				<h4 class="fs-4 mb-3">GIÁ TRỊ</h4>
+				<h5 class="fs-6 fst-italic fw-bolder">VÌ KHÁCH HÀNG</h5>
+				<p class="my-4">Mang đến những sản phẩm và dịch vụ tốt nhất cho mỗi khách hàng.</p>
+
+				<h5 class="fs-6 fst-italic fw-bolder">CHÍNH TRỰC</h5>
+				<p class="my-4">Luôn lựa chọn giải pháp tối ưu nhất cho khách hàng, nhân viên, đối tác và cộng đồng xung quanh..</p>
+
+				<h5 class="fs-6 fst-italic fw-bolder">CHẤT LƯỢNG</h5>
+				<p class="my-4">Không ngừng theo đuổi những tiêu chuẩn chất lượng khắt khe trong mọi quy trình.</p>
+
+				<h5 class="fs-6 fst-italic fw-bolder">TÔN TRỌNG</h5>
+				<p class="my-4">Hướng tới trải nghiệm mua sắm và môi trường làm việc không có sự phân biệt đối xử dưới mọi hình thức.</p>
+
+				<h5 class="fs-6 fst-italic fw-bolder">TINH THẦN ĐỒNG ĐỘI</h5>
+				<p class="my-4">Sẵn sàng đồng hành cùng khách hàng, đồng nghiệp và nhà cung cấp để đạt tới những kết quả tốt nhất.</p>
+
+				<h5 class="fs-6 fst-italic fw-bolder">CẢI TIẾN KHÔNG NGỪNG</h5>
+				<p class="my-4">Không bao giờ tự hài lòng, chúng tôi sẽ luôn không ngừng phát triển bản thân.</p>
+			</div>
+		</div>
+		<!---------------------------------------------- END CONTENT  ----------------------------------->
+
+		
+
+		<!------------------------------- START FOOTER --------------------------------------->
+
+	<footer class="row footer border border-top-1">
+		<div class="d-flex flex-wrap px-6">
+			<div class="col-12 col-md-6 col-lg-3 pe-3 ps-2 ps-lg-0 py-4">
+				<h2 class="fs-6 fw-bolder mb-3">LIÊN HỆ VỚI ANT HOME</h2>
+				<p class="py-2"><b>Địa chỉ</b>: 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</p>
+				<p class="py-2"><b>Điện thoại:</b> <span class="textHoverColor">1900 6750</span></p>
+				<p class="py-2"><b>Email:</b> <span class="textHoverColor">support@sapo.vn</span></p>
+				<img src="public/image/logo.webp" alt="" class="w-75">
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 px-2 px-lg-3 py-4">
+				<h2 class="fs-6 fw-bolder mb-3">VỀ CHÚNG TÔI</h2>
+				<ul class="ps-3">
+					<li class="py-1 fs-7 textHoverColor">Giới thiệu</li>
+					<li class="py-1 fs-7 textHoverColor">Chính sách bảo mật thanh toán</li>
+					<li class="py-1 fs-7 textHoverColor">Bảo mật thông tin cá nhân</li>
+					<li class="py-1 fs-7 textHoverColor">Quy chế hoạt động</li>
+					<li class="py-1 fs-7 textHoverColor">Bán hàng cùng Ant Home</li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 px-2 px-lg-3 py-4">
+				<h2 class="fs-6 fw-bolder mb-3">VỀ CHÚNG TÔI</h2>
+				<ul class="ps-3">
+					<li class="py-1 fs-7 textHoverColor">Hướng dẫn đặt hàng</li>
+					<li class="py-1 fs-7 textHoverColor">Quy trình giao hàng & thanh toán</li>
+					<li class="py-1 fs-7 textHoverColor">Quy trình đổi trả & bảo hành</li>
+					<li class="py-1 fs-7 textHoverColor">Chính sách giải quyết khiếu nại</li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 py-4 ps-2 ps-lg-0">
+				<h2 class="fs-6 fw-bolder mb-3">KẾT NỐI VỚI CHÚNG TÔI</h2>
+				<div class="d-flex align-items-center mb-2 fs-4">
+					<i class="bi textHoverColor px-1 bi-facebook"></i>
+					<i class="bi textHoverColor px-1 bi-twitter"></i>
+					<i class="bi textHoverColor px-1 bi-youtube"></i>
+					<i class="bi textHoverColor px-1 bi-instagram"></i>
+				</div>
+				<h2 class="fs-6 fw-bolder">PHƯƠNG THỨC THANH TOÁN</h2>
+				<div class="d-flex flex-wrap">
+					<div class="col-3 p-1">
+						<img src="public/image/footer/1.svg" alt="" class="w-100">
+					</div>
+					<div class="col-3 p-1">
+						<img src="public/image/footer/2.svg" alt="" class="w-100">
+					</div>
+					<div class="col-3 p-1">
+						<img src="public/image/footer/3.svg" alt="" class="w-100">
+					</div>
+					<div class="col-3 p-1">
+						<img src="public/image/footer/4.svg" alt="" class="w-100">
+					</div>
+					<div class="col-3 p-1">
+						<img src="public/image/footer/5.svg" alt="" class="w-100">
+					</div>
+					<div class="col-3 p-1">
+						<img src="public/image/footer/6.svg" alt="" class="w-100">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-secondary py-3">
+			<p class="text-center fs-7">© Bản quyền thuộc về <b class="fw-bolder">Kiến Vàng</b> | Cung cấp bởi Sapo</p>
+		</div>
+	</footer>
+	<!------------------------------- END FOOTER --------------------------------------->
+	</div>
+	
+	<button class="bg-dark text-light d-flex align-items-center justify-content-center rounded-circle overflow-hidden position-fixed bottom-0 end-0 translate-middle z-3 fs-5" style="width: 3rem; height: 3rem;outline: none; border:none;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+		<i class="bi bi-arrow-up"></i>
+	</button>
+</body>
+</html>
+<script src="./main.js"></script>
